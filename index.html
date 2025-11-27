@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
-    header("Location: dashboard.php");
+    header("Location: dashboard.html");
     exit;
 }
 ?>
@@ -75,7 +75,5 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
         </form>
     </div>
 </body>
-<!-- demObywatel 2024 -->
-<!-- Paulina Bernaszuk -->
 <!-- Strona jest przeznaczona jedynie do generowania demonstracyjnych stron aplikacji mObywatel. -->
 </html>
