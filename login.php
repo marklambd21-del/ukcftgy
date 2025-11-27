@@ -3,7 +3,6 @@ session_start();
 
 $users = array(
     "admin" => "admin",
-// This is made by Magiczny_Jasiek, and only he can sell it. If you bought it from other vacban.wtf listing that was not this one: https://vacban.wtf/vacshop/78615/ then be careful using it. It is not official.
 
 ); 
 
@@ -15,13 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
         
-        header("Location: dashboard.php");
+        header("Location: dashboard.html");
         exit;    } else {
         echo "Invalid auth key.";
     }
 } else {
-	// This is made by Magiczny_Jasiek, and only he can sell it. If you bought it from other vacban.wtf listing that was not this one: https://vacban.wtf/vacshop/78615/ then be careful using it. It is not official.
-    header("Location: index.php");
+    header("Location: index.html");
     exit; 
 }
 ?>
